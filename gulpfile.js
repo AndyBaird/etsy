@@ -112,6 +112,7 @@ gulp.task('js:vendor', function () {
     .require('jquery')
     .require('underscore')
     .require('backbone')
+    .require('susy')
     .bundle()
     .pipe(source('vendor.js'))
     .pipe(gulp.dest('./dist/js'));
