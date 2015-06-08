@@ -6,8 +6,8 @@
 /* Changing Susy default global settings */
 $susy: (
 
-  /* Tells Susy that the container has a max-width of 1120px */
-  container: 1120px,
+  /* Tells Susy that the container has 12 columns*/
+
   columns: 12,
   /* Tells Susy to use border-box */
   global-box-sizing: border-box 
@@ -15,21 +15,43 @@ $susy: (
 
 /* Makes border-box properties */
 @include border-box-sizing;
-
-.listings {
-  @include container;
+body {
+  background: #F5F5F1;
 }
-
+a {
+  color: black;
+  font-size: 0.6em;
+  white-space: nowrap;
+}
+.listings {
+  @include container();
+  color: #999999;
+  font-size: 0.9em;
+  margin: 4em;
+}
 .listing {
   @include span(4);
+  background: white;
+  height: 25em;
+  margin: 0.5em;
+  border-radius: 0.3em;
+  border: solid 1px #D6D6D3;
+  padding:1em;
+  overflow: hidden;
 }
+
 
 .listing:nth-child(3n+3) {
   @include span(4 last);
+
 }
 
 @media (max-width: 600px) { 
   .listing {
     @include span(12);
+    @include container();
+  }
+  .listing:nth-child(3n+3) {
+  @include span(12 last);
   }
 }
