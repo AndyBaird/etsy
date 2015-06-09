@@ -1,0 +1,9 @@
+@media (max-width: 600px) { 
+  .listing {
+    @include span(12);
+    @include container();
+  }
+  .listing:nth-child(3n+3) {
+  @include span(12 last);
+  }
+}
