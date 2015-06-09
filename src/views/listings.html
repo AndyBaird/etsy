@@ -2,8 +2,14 @@
 <% m.listings.forEach(function (listing) { %>
   <li class="listing">
     <img class="listing-img" src="<%- listing.imgUrl %>" />
-    <h2 class="listing-title"><a href="<%- listing.externalUrl %>"><%- listing.title %></a></h2>
-    <div class="listing-description"><%- listing.description %></div>
+    
+      <h2 class="listing-title"><a href="<%- listing.externalUrl %>"><%- listing.title %></a></h2>
+  	<div class = "listing-title-container">
+    </div>
+  
+     <div class="listing-description"><%- listing.description %></div>
+    <div class="listing-description-container">
+    </div>            
   </li> 
 <% }) %>
 </ul>
