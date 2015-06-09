@@ -33,7 +33,9 @@ EtsyService.prototype = {
   
   // Gets listings from Etsy
   listings: function () {
+    var args = args || {};
     var url = this.baseUrl + '/listings/active.js?includes=MainImage&api_key=' + this.apiKey + '&callback=?';
+    //keyword=' + encodeURIComponent(args.keywords) + '
     return this.fetchUrl(url);
   }
 };

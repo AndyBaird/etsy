@@ -1,0 +1,47 @@
+body {
+  background: #F5F5F1;
+}
+header {
+  @include span(12);
+  //position: fixed;
+  // top: 0;
+  float: none;
+  position: relative;
+  display: inline-block;
+  margin-left: 4em;
+  margin-right: 4em;
+  margin-top: 1em;
+
+}
+.header-column {
+  @include span(4);
+}
+.header-column:nth-child(3n+3){
+  @include span(4 last);
+}
+header h1 {
+  // padding-top: 0.5em;
+  // margin: 0 auto;
+  // max-width: 150px;
+  font-family: times;
+  color: #F56400;
+}
+.search {
+  padding:1em;
+  background:rgba(255, 255, 255, 0.8);
+  border:2px solid #dbdbdb;
+  font-size: 14px;
+}
+.search-button {
+  position:relative;
+  padding:1em;
+  font-size: 14px;
+  left:-8px;
+  border:2px solid #207cca;
+  background-color:#207cca;
+  color:#fafafa;
+}
+.button:hover  {
+  background-color:#fafafa;
+  color:#207cca;
+}

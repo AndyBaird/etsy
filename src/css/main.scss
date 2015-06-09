@@ -4,9 +4,7 @@
 @import 'defaults';
 /* Changing Susy default global settings */
 $susy: (
-
   /* Tells Susy that the container has 12 columns*/
-
   columns: 12,
   /* Tells Susy to use border-box */
   global-box-sizing: border-box 
@@ -14,59 +12,11 @@ $susy: (
 
 /* Makes border-box properties */
 @include border-box-sizing;
-
-.listings {
-  @include container();
-}
-.listing {
-  @include span(4);
-}
-.listing:nth-child(3n+3) {
-  @include span(4 last);
-}
-@import 'media-query';
+@import 'header';
 @import 'listing-styles';
+@import 'media-query';
 
-body {
-  background: #F5F5F1;
-}
-header h1 {
-  padding-top: 0.5em;
-  margin: 0 auto;
-  max-width: 150px;
-  font-family: times;
-  color: #F56400;
-}
-form {
-  position: absolute;
-  top:0;
-  left: 0;
-  width:500px;
-  margin-left: 3.8em;
-  margin-top: 1em;
-}
-.search {
-  padding:1em;
-  background:rgba(50, 50, 50, 0.2);
-  border:2px solid #dbdbdb;
-  font-size: 14px;
-}
-.search-button {
-  position:relative;
-  padding:1em;
-  font-size: 14px;
-  left:-8px;
-  border:2px solid #207cca;
-  background-color:#207cca;
-  color:#fafafa;
-}
-.button:hover  {
-  background-color:#fafafa;
-  color:#207cca;
-}
 
-a {
-  color: black;
-  font-size: 0.6em;
-  white-space: nowrap;
-}
+
+
+
