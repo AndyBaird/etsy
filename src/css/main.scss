@@ -48,10 +48,10 @@ a {
   box-shadow: inset -110px 14px 40px -70px rgba(255,255,255,1);
   position: absolute;
   right: 0;
-  top: 45%;
+  top: 50%;
 }
 .listing-title {
-    padding-left:0.5em;
+    padding-left:1em;
     margin: 0;
 }
 .listing-description-container {
@@ -64,11 +64,12 @@ a {
   box-shadow: inset 0px -30px 55px -14px rgba(255,255,255,1);
 }
 .listing-description {
-    padding:1em;
+    padding:2em;
 }
 .listing-img {
-  margin-left: 25%;
-  margin-right: 25%;
+  display: block;
+  margin:0 auto;
+  width:200px;
   padding-top: 1em;
 }
 
