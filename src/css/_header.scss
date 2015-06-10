@@ -26,6 +26,7 @@ header h1 {
   position: relative;
   font-family: times;
   color: #F56400;
+
   text-align: center;
 
 }
@@ -46,7 +47,6 @@ header h1 {
   color:#fafafa;
   border-radius: 0.2em;
 }
-.button:hover  {
-  background-color:#fafafa;
-  color:#207cca;
+.search-button:hover  {
+  background-color:#3285D6;
 }
