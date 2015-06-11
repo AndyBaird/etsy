@@ -232,7 +232,7 @@ a {
     margin-right: 0; } }
 
 .payment-container {
-  visibility: hidden;
+  display: none;
   position: absolute;
   left: 0px;
   top: 0px;
