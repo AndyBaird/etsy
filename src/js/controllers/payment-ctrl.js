@@ -6,15 +6,7 @@
   var _ = require('../../../node_modules/underscore/underscore.js');
   var parsley = require('../../../node_modules/parsleyjs/dist/parsley.js');
   var view = require('../utils/view');
-  
-  
-  
-  router.route('payment', function () {
-    parsley();
- function parsley() {
-  	$('.payment-form').parsley();
-  }
-   
+
     $(".header-payment").click(function (){
      $(".payment-container").fadeIn(); 
     });
@@ -24,7 +16,16 @@
        //if no parsley error then...
        $(".payment-container").fadeOut(); 
        }
-      });
+      });  
+  
+  
+  router.route('payment', function () {
+    parsley();
+ function parsley() {
+  	$('.payment-form').parsley();
+  }
+   
+
   
 });
 
