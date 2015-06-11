@@ -48,7 +48,13 @@ header h1 {
 .search-button:hover  {
   background-color:#3285D6;
 }
-.icon-navigation {
-  text-align: right;
-  font-size: 2em;
+.header-payment {
+  float: right;
+  padding:0.6em;
+  font-size: 14px;
+  left:-8px;
+  border:2px solid #207cca;
+  background-color:#207cca;
+  color:#fafafa;
+  border-radius: 0.2em;
 }
