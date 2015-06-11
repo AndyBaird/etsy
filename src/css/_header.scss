@@ -26,9 +26,7 @@ header h1 {
   position: relative;
   font-family: times;
   color: #F56400;
-
   text-align: center;
-
 }
 .search {
   padding:0.6em;
@@ -49,4 +47,8 @@ header h1 {
 }
 .search-button:hover  {
   background-color:#3285D6;
+}
+.icon-navigation {
+  text-align: right;
+  font-size: 2em;
 }

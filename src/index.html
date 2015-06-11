@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Etsy</title>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
     
@@ -20,14 +22,53 @@
       </div>
       <div class="header-column">
         <div class = "icon-navigation">
+          <a class= 'header-payment' href='#payment'><i class="fa fa-shopping-cart"></i> Checkout</a>
+          
         </div>
       </div>
     </header>
-    
+     <div class='payment-container'>
+        <div class="payment">
+          <form class ='payment-form'>
+            <input class = "name" 
+              type = "text" 
+              placeholder = "name" 
+              autofocus 
+              required
+              data-parsley-error-message ="Amnesia?">
+            
+            <input class = "credit-card" 
+              type = "text"
+              value
+              placeholder = "XXXX-XXXX-XXXX-XXXX" 
+              required 
+              pattern = "[0-9]{13,16}" 
+              data-parsley-error-message ="Try again, I promise won't tell ; )">
+            
+            <input class = "expire" 
+              type = "text"
+              placeholder = "01/15" 
+              value
+              required 
+              pattern ="/^(0[1-9]|1[0-2])\/?([0-9]{4}|[0-9]{2})$/"
+              data-parsley-error-message ="Please check again">
+              
+            <input class = "security-code" 
+              type = "text"
+              placeholder = "3-4 digit code"
+              value
+              required
+              pattern ="/^[0-9]{3,4}$/"
+              data-parsley-error-message ="No soup for you!">
+              
+            <button class = "btn-complete">Complete</button>
+          </form>
+        </div>
+      </div>
     <div>    
-    <main class="main-content"></main>
+     <main class="main-content"></main>
     </div>
-
+   
     <script src="js/vendor.js"></script>
     <script src="js/views.js"></script>
     <script src="js/app.js"></script>

@@ -100,6 +100,7 @@ gulp.task('js', function () {
     .external('jquery')
     .external('underscore')
     .external('backbone')
+    .external('parsley')
     .bundle()
     .pipe(source('app.js'))
     .pipe(buffer())
@@ -112,6 +113,7 @@ gulp.task('js:vendor', function () {
     .require('jquery')
     .require('underscore')
     .require('backbone')
+    .require('parsleyjs')
     .bundle()
     .pipe(source('vendor.js'))
     .pipe(gulp.dest('./dist/js'));

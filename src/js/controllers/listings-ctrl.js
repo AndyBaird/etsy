@@ -34,7 +34,7 @@ router.route('', 'listings', function () {
     
           function showError (req, status, err) {
           console.error(err || status);
-          alert('error');
+         // alert('error');
           };
      });
 });
