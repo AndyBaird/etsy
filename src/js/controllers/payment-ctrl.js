@@ -8,16 +8,23 @@
   var view = require('../utils/view');
   
   
+  
   router.route('payment', function () {
-    modal();
-  function modal() {
+    parsley();
+ function parsley() {
   	$('.payment-form').parsley();
-    var el = document.querySelector(".payment-container");
-  	el.style.visibility = (el.style.visibility == "visible") ? "hidden" : "visible";
-    
   }
-
-
+   
+    $(".header-payment").click(function (){
+     $(".payment-container").fadeIn(); 
+    });
+  
+      $(".btn-complete").click(function (){
+       if($("payment-container").parsley().isValid()) {
+       //if no parsley error then...
+       $(".payment-container").fadeOut(); 
+       }
+      });
   
 });
 
